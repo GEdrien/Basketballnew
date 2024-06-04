@@ -30,4 +30,7 @@ jobs:
           
           # Push version to env
           echo "ARTIFACT_VERSION=$version" >> $GITHUB_ENV
-          echo "Na itt is eljott"
+          echo "Na itt is eljott
+          
+          # Overwrite local artifact version"
+          mvn -B versions:set -DnewVersion="$version" --file pom.xml
