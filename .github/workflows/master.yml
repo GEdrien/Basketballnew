@@ -30,3 +30,4 @@ jobs:
           
           # Push version to env
           echo "ARTIFACT_VERSION=$version" >> $GITHUB_ENV
+          echo "Na itt is eljott"
